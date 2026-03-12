@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import "../style/Home.css";
-import CategorySection from "../components/categorysection";
+import CategorySection from "../components/CategorySection";
 import Navbar from "../components/Navbar";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
