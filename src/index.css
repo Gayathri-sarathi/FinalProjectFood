@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+nav {
+  display: none;
+}
+
+/* Hero Section */
+.zomato-hero {
+  height: 100vh;
+  /* background-image: url("./assets/back.jpg"); */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Dark Overlay */
+.zomato-hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* Top Navigation */
+.top-nav {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  color: white;
+}
+
+.top-nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+/* Center Content */
+.hero-center {
+  position: relative;
+  z-index: 2;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.brand {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.hero-center p {
+  font-size: 24px;
+  margin: 10px 0 30px;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.search-box input {
+  border: none;
+  padding: 15px;
+  width: 250px;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-box input:first-child {
+  border-right: 1px solid #ccc;
+}
+
+/* Login / Register Pages */
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("https://static.vecteezy.com/system/resources/thumbnails/031/624/488/small/background-for-productgraphy-ai-generated-photo.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.auth-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+}
+
+.auth-card {
+  position: relative;
+  z-index: 1;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.auth-card input {
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.auth-card button {
+  margin-top: 15px;
+  padding: 12px;
+  background: #ff4d4d;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-card p {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.auth-card a {
+  color: #ff4d4d;
+  text-decoration: none;
+}

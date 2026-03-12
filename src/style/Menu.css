@@ -1,0 +1,167 @@
+/* NAVBAR */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #ff5200;
+  color: white;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* MENU PAGE */
+.menu-container {
+  margin-top: 80px;
+  padding: 30px;
+}
+
+/* HEADER SECTION */
+.menu-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.location-text {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* SEARCH CENTER */
+.menu-search {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-search input {
+  width: 400px;
+  max-width: 90%;
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 16px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* CATEGORY BAR */
+.category-bar {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.category-bar button {
+  padding: 8px 18px;
+  margin: 5px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background: #eee;
+  transition: 0.3s;
+}
+
+.category-bar button.active {
+  background: #ff4d4d;
+  color: white;
+}
+
+.category-bar button:hover {
+  background: #ff4d4d;
+  color: white;
+}
+
+/* 🔥 CREATIVE OFFER SECTION */
+.offer-banner {
+  background: linear-gradient(90deg, #ff4d4d, #ff944d);
+  color: white;
+  text-align: center;
+  padding: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 25px auto;
+  width: 80%;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+/* GRID */
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.menu-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+}
+
+.image-container img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu-info {
+  padding: 15px;
+}
+
+/* PRICE + ADD */
+.price-add {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ADD BUTTON */
+.add-btn {
+  background: white;
+  color: #ff5200;
+  border: 2px solid #ff5200;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  background: #ff5200;
+  color: white;
+}
+
+.no-results {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 18px;
+}
